@@ -28,6 +28,7 @@ jobs:
         run: |
           yarn install --frozen-lockfile
           yarn build
+          yarn next export
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@4.1.7
